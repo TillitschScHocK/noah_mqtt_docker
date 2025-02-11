@@ -1,0 +1,20 @@
+name: "NOAH MQTT"
+version: "1.0"
+slug: "noah_mqtt"
+description: "An MQTT bridge for NOAH devices."
+arch:
+  - amd64
+  - armv7
+  - arm64
+startup: application
+boot: auto
+options:
+  GROWATT_USERNAME: "your_username"
+  GROWATT_PASSWORD: "your_password"
+  MQTT_HOST: "localhost"
+  MQTT_PORT: 1883
+schema:
+  GROWATT_USERNAME: str
+  GROWATT_PASSWORD: str
+  MQTT_HOST: str
+  MQTT_PORT: int
